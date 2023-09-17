@@ -22,9 +22,8 @@ function App() {
           <Route path="/item/:id" element={<ItemDetailContainer />} />
 
           <Route path="/checkout" element={<Checkout />} />
-        </Routes>
+        </Routes>     
     </CartProvider>
-    
   );
 }
 

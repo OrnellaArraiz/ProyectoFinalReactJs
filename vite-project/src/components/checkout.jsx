@@ -54,7 +54,7 @@ const Checkout = () => {
   return (
     <div>
       <h2>Resumen de la compra</h2>
-      {orderId && <p>Comprobante de tu compra: {orderId}</p>}
+      {orderId && <p>Comprobante número: {orderId}</p>}
       {!orderId && (
         <>
           <ul>
@@ -69,7 +69,7 @@ const Checkout = () => {
           </ul>
           <p>Total de la compra: ${total}</p>
           <div>
-            <h4>Ingresa tus datos para completar la compra.</h4>
+            <h4>Ingresa tus datos para continuar:</h4>
             <form className="form-control" onSubmit={onSubmit}>
               <Field label="Nombre:" name="name" onChange={onChange} />
               <Field label="Teléfono:" name="phone" onChange={onChange} />

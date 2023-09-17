@@ -1,0 +1,60 @@
+/* Paleta de colores */
+:root {
+    --main-green: #2ecc71; /* Verde principal */
+    --dark-green: #27ae60; /* Verde oscuro */
+    --light-green: #d1f2eb; /* Verde claro */
+    --text-color: var(--main-green); /* Color de texto principal */
+}
+
+
+.container {
+    text-align: center;
+  }
+  
+  .list-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .list-group-item {
+    flex-basis: calc(33.33% - 40px); /* Aproximadamente tres elementos por fila en pantallas grandes */
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .list-group-item a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .list-group-item h3 {
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .list-group-item p {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  .list-group-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .badge {
+    display: block;
+    margin-top: 10px;
+  }
+  

@@ -44,6 +44,8 @@ const CartProvider = ({ children }) => {
     setCart([]);
   };
 
+  
+
   return (
     <CartContext.Provider
       value={{ cart, addItem, removeItem, clear, isInCart }}
