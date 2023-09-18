@@ -10,6 +10,7 @@ const ItemList = ({ items, isLoading }) => {
     
     return (
     <div className="container">
+        <Link to="/checkout">Finalizar compra</Link>
         <h1 className="text-center mb-4">Productos</h1>
         <ul className="list-group">
             {items.map((item) => (

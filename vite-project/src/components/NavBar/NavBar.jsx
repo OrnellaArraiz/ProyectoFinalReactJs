@@ -27,8 +27,8 @@ const Navbar = () => {
                 </li>
             </ul>
           </div>
-          <div className="cart-widget">
-            <NavLink to="/cart"><CartWidget></CartWidget></NavLink>
+          <div>
+            <CartWidget />
           </div>
         </nav>
       </div>

@@ -1,17 +1,15 @@
-import { useState, useEffect, useContext } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getProduct } from "../Services/services";
 import ItemDetail from "./ItemDetail";
 import "./ItemList.css";
-import CartContext from "../../context/CartContext";
 
 const ItemDetailContainer = () => {
-    const [item, setItem] = useState(null);
+    const [item, setItem] = useState({});
     const [isLoading, setIsLoading] = useState(true);
     const { id } = useParams();
 
-    const { addItem } = useContext(CartContext);
-    
+    /* Por ID del item */
     useEffect(() => {
         getProduct(id)
         .then((response) => {
