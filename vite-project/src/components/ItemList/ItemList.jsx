@@ -16,7 +16,7 @@ const ItemList = React.memo(({ items }) => {
 
   const productList = (
     <React.Fragment>
-      <h2 className={styles['titulo-home']}>Nuestros productos: </h2>      
+      <h2 className={styles['titulo-home']}>Donde tu estilo encuentra su momento perfecto... </h2>      
       <ul>
         <div className={styles['grid-container']}>
           {renderedItems}

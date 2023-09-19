@@ -23,7 +23,7 @@
 
 .product-detalle {
     display: flex;
-    text-align: center;
+    text-align: right;
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
