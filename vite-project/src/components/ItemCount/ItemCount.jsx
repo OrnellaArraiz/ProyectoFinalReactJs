@@ -1,3 +1,4 @@
+import styles from "./ItemCount.module.css";
 import { useState } from "react";
 import propTypes from "prop-types";
 
@@ -16,6 +17,10 @@ const ItemCount = ({ initial, onAdd, stock }) => {
     }
   };
 
+  const handleAddToCart = () => {
+    onAdd(quantity);
+  };
+
   return (
     <div className="">
       <div className="d-flex justify-content-between">
@@ -25,16 +30,6 @@ const ItemCount = ({ initial, onAdd, stock }) => {
         <h4 className="number">{quantity}</h4>
         <button className="btn btn-warning" onClick={increment}>
           +
-        </button>
-      </div>
-      <hr />
-      <div>
-        <button
-          className="btn btn-warning"
-          onClick={() => onAdd(quantity)}
-          disabled={!stock}
-        >
-          Agregar al carrito
         </button>
       </div>
     </div>

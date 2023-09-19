@@ -11,8 +11,20 @@ export const CartProvider = ({ children }) => {
     if (!isInCart(item.id)) {
       setCart((prev) => [...prev, { ...item, quantity }]);
     } else {
-      console.error('El producto ya fue agregado');
+      setCart((prev) =>
+        prev.map((product) => {
+          if (product.id === item.id) {
+            return { ...product, quantity: product.quantity + quantity };
+          } else {
+            return product;
+          }
+        })
+      );
     }
+  };
+
+  const isInCart = (itemId) => {
+    return cart.some((prod) => prod.id === itemId);
   };
 
   const removeItem = (itemId) => {
@@ -20,9 +32,7 @@ export const CartProvider = ({ children }) => {
 
     const itemIndex = copyCart.findIndex((item) => item.id === itemId);
 
-    const indexFound = itemIndex !== -1;
-
-    if (indexFound) {
+    if (itemIndex !== -1) {
       const currentQuantity = copyCart[itemIndex].quantity;
 
       if (currentQuantity > 1) {
@@ -37,10 +47,6 @@ export const CartProvider = ({ children }) => {
 
   const clearCart = () => {
     setCart([]);
-  };
-
-  const isInCart = (itemId) => {
-    return cart.some((prod) => prod.id === itemId);
   };
 
   return (
