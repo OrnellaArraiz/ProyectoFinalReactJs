@@ -1,12 +1,10 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { getProduct } from "../Services/services";
-import ItemDetail from "./ItemDetail";
-import "./ItemList.css";
+import ItemDetail from "../ItemDetail/ItemDetail";
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState({});
-    const [isLoading, setIsLoading] = useState(true);
     const { id } = useParams();
 
     /* Por ID del item */
@@ -18,14 +16,10 @@ const ItemDetailContainer = () => {
         
         .catch(() => {
             setItem(null);
-        })
-        
-        .finally(() => {
-            setIsLoading(false);
         });
     }, [id]);
     
-    return <ItemDetail item={item} isLoading={isLoading} addItem={addItem} />;
+    return <ItemDetail item={item} />;
 };
 
 export default ItemDetailContainer;

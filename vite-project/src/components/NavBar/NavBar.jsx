@@ -1,38 +1,39 @@
 import { Link, NavLink } from "react-router-dom";
-import CartWidget from "../CartWidget/CartWidget";
-import "../NavBar/NavBar.css";
+import styles from './NavBar.module.css';
+import CartWidget from '../CartWidget/CartWidget';
 
-const Navbar = () => {
-    return (
-      <div className="container">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <h1 className="navbar-brand"> 
-            <Link to="/" className="text-decoration-none">La Relojería</Link>
-          </h1>
-
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-  
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ml-auto">
-                <li className="nav-item">
-                    <NavLink className="nav-link" to="/category/watches">Relojes</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink className="nav-link" to="/category/smartwatches">Smartwatch</NavLink>
-                </li>
-                <li className="nav-item">
-                    <NavLink className="nav-link" to="/category/accessories">Accesorios</NavLink>
-                </li>
-            </ul>
-          </div>
+const NavBar = () => {
+  return (
+    <nav className={styles['nav']}>
+      <div className={styles['enlaces-menu']}>
+        <h1>
+          <Link to="/" className={styles['enlaces-menu-titulo']}>La Relojería</Link>
+        </h1>
+        <ul className={styles['enlaces-menu-item']}>
+          <li>
+            <NavLink to="/category/watches" className={styles['enlaces-menu-item-li']}>Relojes</NavLink>
+          </li>
+          <li>
+            <NavLink to="/category/smartwatches" className={styles['enlaces-menu-item-li']}>Smartwatch</NavLink>
+          </li>
+          <li>
+            <NavLink to="/category/accessories" className={styles['enlaces-menu-item-li']}>Accesorios</NavLink>
+          </li>
           <div>
-            <CartWidget />
+            <NavLink to="/cart" className={styles['enlaces-menu-item-cart']}>
+              <CartWidget />
+            </NavLink>
           </div>
-        </nav>
+        </ul>
       </div>
-    );
+    </nav>
+  );
 };
 
-export default Navbar;
+export default NavBar;
+
+
+
+
+
+
