@@ -1,4 +1,3 @@
-import styles from "./ItemCount.module.css";
 import { useState } from "react";
 import propTypes from "prop-types";
 

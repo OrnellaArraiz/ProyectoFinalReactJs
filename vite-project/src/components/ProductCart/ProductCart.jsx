@@ -11,10 +11,10 @@ const ProductCart = React.memo(({ item }) => {
 
   const handleAddToCart = () => {
     addItem(item, quantityToAdd);
-    toast('Producto agregado al carrito', {
+    toast('Agregado al carrito con éxito', {
       position: "top-left",
-      autoClose: 900,
-      theme: "colored",
+      autoClose: 1200,
+      theme: "light",
       });
   };
 

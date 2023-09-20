@@ -3,9 +3,7 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: solid 1px rgba(255, 0, 255, 0.271);
-    box-shadow: 2px 2px 4px rgba(255, 0, 255, 0.271);
-    background-color: rgba(255, 192, 203, 0.498);
+    background-color: #E71D57;
     border-radius: 10px;
   }
   
@@ -42,10 +40,8 @@
   }
   
   .submit-button {
-    background-color: #FFA500; 
-    color: white; 
-    border: solid 1px #8B0000;
-    box-shadow: 2px 2px 4px #8B0000;
+    background-color: #D7DAE0; 
+    color: black; 
     border-radius: 5px;
     padding: 10px 20px;
     cursor: pointer;
@@ -53,14 +49,12 @@
   }
   
   .submit-button:hover {
-    background-color: #8B0000; 
+    background-color: #E71D57; 
     color: white;
   }
 
   .boton-volver-form {
-    border: solid 1px #8B0000;
-    box-shadow: 2px 2px 4px #8B0000;
-    background-color: #FFA500; 
+    background-color: #D7DAE0; 
     color: black; 
     border-radius: 5px; 
     padding: 10px 20px; 
@@ -70,7 +64,7 @@
   }
 
   .boton-volver-form:hover {
-    background-color: #8B0000; 
+    background-color: #E71D57; 
     color: white;
   }
 
@@ -80,8 +74,6 @@
     font-size: 1rem;
     color: black;
     border: solid 1px rgba(255, 0, 255, 0.271);
-    box-shadow: 2px 2px 4px rgba(255, 0, 255, 0.271);
-    background-color: rgba(255, 192, 203, 0.498);
     border-radius: 10px;
     margin-left: 250px;
     cursor: pointer;
@@ -89,7 +81,7 @@
 
 .boton-volver:hover {
     color: white;
-    background-color: rgba(255, 0, 255, 0.271);
+    background-color: #E71D57;
 }
 
 .img-checkout {
@@ -101,8 +93,6 @@
 
 .li-checkout {
   display: flex;
-  border: solid 1px rgba(255, 0, 255, 0.271);
-  box-shadow: 2px 2px 4px rgba(255, 0, 255, 0.271);
   width: 100%;
   margin: auto;
   margin-top: 20px;
@@ -154,7 +144,7 @@
   font-size: 1.2rem;
 }
 
-/* Media Queries */
+/* Mobile */
 @media (max-width: 767px) {
     .title {
         font-size: 20px;

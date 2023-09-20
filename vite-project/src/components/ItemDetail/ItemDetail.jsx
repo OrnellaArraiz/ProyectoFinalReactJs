@@ -31,16 +31,16 @@ const ItemDetail = ({ item }) => {
         <p className={styles['product-detalle']}>{item.description}</p>
       </div>
       <div className={styles['btn-container']}>
-      <button className={styles['boton-agregar']} onClick={handleAddToCart}>Agregar al carrito</button>
-      <ItemCount
-        initial={1}
-        stock={item.stock}
-        quantity={quantityToAdd}
-        onChange={setQuantityToAdd}
-      />
-      <Link to="/">
-        <button className={styles['btn-volver']}>Volver</button>
-      </Link>
+        <Link to="/">
+          <button className={styles['btn-volver']}>Volver</button>
+        </Link>
+        <button className={styles['boton-agregar']} onClick={handleAddToCart}>Agregar al carrito</button>
+        <ItemCount
+          initial={1}
+          stock={item.stock}
+          quantity={quantityToAdd}
+          onChange={setQuantityToAdd}
+        />
       </div>
     </div>
   );
