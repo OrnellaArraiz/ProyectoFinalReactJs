@@ -53,7 +53,7 @@
     color: white;
   }
 
-  .boton-volver-form {
+  .button-back-form {
     background-color: #D7DAE0; 
     color: black; 
     border-radius: 5px; 
@@ -63,12 +63,12 @@
     margin-top: 20px; 
   }
 
-  .boton-volver-form:hover {
+  .button-back-form:hover {
     background-color: #E71D57; 
     color: white;
   }
 
-  .boton-volver {
+  .button-back {
     display: block;
     padding: .3em;
     font-size: 1rem;
@@ -79,7 +79,7 @@
     cursor: pointer;
 }
 
-.boton-volver:hover {
+.button-back:hover {
     color: white;
     background-color: #E71D57;
 }
@@ -134,12 +134,12 @@
   padding: .5em;
 }
 
-.p-compra-exitosa {
+.p-order {
   font-size: 1.3rem;
   margin: 5px;
 }
 
-.p-compra-detalle {
+.p-buy-detail {
   margin-top: 50px;
   font-size: 1.2rem;
 }
@@ -155,7 +155,7 @@
         font-size: 14px;
     }
     .submit-button,
-    .boton-volver-form {
+    .button-back-form {
         font-size: 14px;
         padding: 8px 16px;
         margin-top: 15px;

@@ -33,7 +33,7 @@ const ProductCart = React.memo(({ item }) => {
         onChange={setQuantityToAdd}
       />
 
-      <button className={styles['btn-agregar']} onClick={handleAddToCart}>Agregar al carrito</button>
+      <button className={styles['btn-add']} onClick={handleAddToCart}>Agregar al carrito</button>
     </div>
   );
 });

@@ -5,22 +5,22 @@ import CartWidget from '../CartWidget/CartWidget';
 const NavBar = () => {
   return (
     <nav className={styles['nav']}>
-      <div className={styles['enlaces-menu']}>
+      <div className={styles['link-menu']}>
         <h1>
-          <Link to="/" className={styles['enlaces-menu-titulo']}>La Relojería</Link>
+          <Link to="/" className={styles['link-menu-title']}>La Relojería</Link>
         </h1>
-        <ul className={styles['enlaces-menu-item']}>
+        <ul className={styles['link-menu-item']}>
           <li>
-            <NavLink to="/category/watches" className={styles['enlaces-menu-item-li']}>Relojes</NavLink>
+            <NavLink to="/category/watches" className={styles['link-menu-item-li']}>Relojes</NavLink>
           </li>
           <li>
-            <NavLink to="/category/smartwatches" className={styles['enlaces-menu-item-li']}>Smartwatch</NavLink>
+            <NavLink to="/category/smartwatches" className={styles['link-menu-item-li']}>Smartwatch</NavLink>
           </li>
           <li>
-            <NavLink to="/category/accessories" className={styles['enlaces-menu-item-li']}>Accesorios</NavLink>
+            <NavLink to="/category/accessories" className={styles['link-menu-item-li']}>Accesorios</NavLink>
           </li>
           <div>
-            <NavLink to="/cart" className={styles['enlaces-menu-item-cart']}>
+            <NavLink to="/cart" className={styles['link-menu-item-cart']}>
               <CartWidget />
             </NavLink>
           </div>

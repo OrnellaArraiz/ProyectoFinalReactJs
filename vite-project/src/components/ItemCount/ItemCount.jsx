@@ -19,20 +19,6 @@ const ItemCount = ({ initial, onAdd, stock }) => {
   const handleAddToCart = () => {
     onAdd(quantity);
   };
-
-  return (
-    <div className="">
-      <div className="d-flex justify-content-between">
-        <button className="btn btn-warning" onClick={decrement}>
-          -
-        </button>
-        <h4 className="number">{quantity}</h4>
-        <button className="btn btn-warning" onClick={increment}>
-          +
-        </button>
-      </div>
-    </div>
-  );
 };
 
 export default ItemCount;

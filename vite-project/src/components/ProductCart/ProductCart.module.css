@@ -9,7 +9,7 @@
     width: 100%;
   }
   
-  .btn-agregar {
+  .btn-add {
     padding: .3em;
     width: 50%;
     margin: auto;
@@ -20,7 +20,7 @@
     font-size: 1.2rem; 
   }
   
-  .btn-agregar:hover {
+  .btn-add:hover {
     background-color: #E71D57;
     color: white;
   }
@@ -52,7 +52,7 @@
   
   /* Mobile */
   @media (max-width: 768px) {
-    .btn-agregar {
+    .btn-add {
       font-size: 1rem; 
     }
   

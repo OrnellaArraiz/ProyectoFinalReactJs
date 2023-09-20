@@ -21,7 +21,7 @@ const Cart = () => {
             <h2 className={styles['h2-cart']}>Carrito de compras</h2>
             {isEmpty ? (
                 <div>
-                    <p className={styles['empty-cart-p']}>¡Oh no! Tu carrito de compras está vacio</p>
+                    <p className={styles['empty-cart-p']}>¡Oh no! Tu carrito de compras está vacío.</p>
                     <Link to="/"><button className={styles['empty-cart-btn']}> Ver productos  </button></Link>
                 </div>
             ) : (
@@ -47,11 +47,11 @@ const Cart = () => {
                         <div className={styles['cart-total']}>
                             <p>Total: ${calculateTotal()}</p>
                         </div>
-                        <button className={styles['vaciar-cart']} onClick={() => clearCart()}>Vaciar carrito</button>
+                        <button className={styles['clear-cart']} onClick={() => clearCart()}>Vaciar carrito</button>
                         <Link to="/checkout">
-                            <button className={styles['comprar-cart']}>Realizar compra</button>
+                            <button className={styles['buy-cart']}>Realizar compra</button>
                         </Link>
-                        <Link to="/"><button className={styles['ver-mas-cart']}> Ver mas productos  </button></Link>
+                        <Link to="/"><button className={styles['more-products-cart']}> Ver más productos  </button></Link>
                     </div>
                 </div>
             )}

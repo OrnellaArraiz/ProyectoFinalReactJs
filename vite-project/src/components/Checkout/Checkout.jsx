@@ -45,7 +45,7 @@ function Checkout() {
 
     addDoc(ordersCollection, orderData)
       .then((docRef) => {
-        console.log('orden creada con id: ', docRef.id);
+        console.log('comprobante de compra: ', docRef.id);
         setOrderId(docRef.id);
         setIsFormSubmitted(true);
       })
@@ -81,8 +81,8 @@ function Checkout() {
       <h2 className={styles['title']}>Finalizar compra</h2>
       {isFormSubmitted ? (
         <div>
-          <p className={styles['p-compra-exitosa']}>¡Gracias por tu compra! Este es tu comprobante: {orderId}</p>
-          <p className={styles['p-compra-detalle']}>Detalle de tu compra: </p>
+          <p className={styles['p-order']}>¡Gracias por tu compra! Este es tu comprobante: {orderId}</p>
+          <p className={styles['p-buy-detail']}>Detalle de tu compra: </p>
           <ul>
             {cart.map((item) => (
               <li key={item.id} className={styles['li-checkout']}>
@@ -97,7 +97,7 @@ function Checkout() {
           </ul>
           <p className={styles['checkout-total']}>Total: ${calculateTotal()}</p>
           <Link to="/">
-            <button className={styles['boton-volver']}>Volver</button>
+            <button className={styles['button-back']}>Volver</button>
           </Link>
         </div>
       ) : (
@@ -142,7 +142,7 @@ function Checkout() {
             Finalizar Compra
           </button>
 
-          <Link to="/"><button className={styles['boton-volver-form']}> Volver </button></Link>
+          <Link to="/"><button className={styles['button-back-form']}> Volver </button></Link>
         </form>
       )}
     </div>

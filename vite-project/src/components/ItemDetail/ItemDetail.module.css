@@ -15,21 +15,21 @@
 
 .product-image {
     width: 60%;
-    max-height: 400px; 
+    max-height: 600px; 
     object-fit: cover;
     margin: 10px auto; 
 }
 
-.product-detalle {
+.product-detail {
     display: flex;
-    text-align: right;
+    text-align: center;
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
     margin-right: 70px;
 }
 
-.btn-volver {
+.btn-back {
     display: block;
     font-size: 1rem;
     width: 50%;
@@ -43,12 +43,12 @@
     transition: background-color 0.3s;
 }
 
-.btn-volver:hover, .boton-agregar:hover {
+.btn-back:hover, .button-add:hover {
     background-color: #E71D57; 
     color: white;
 }
 
-.boton-agregar {
+.button-add {
     display: block;
     font-size: 1.2rem;
     width: 100%;

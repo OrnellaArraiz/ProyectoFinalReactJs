@@ -28,13 +28,13 @@ const ItemDetail = ({ item }) => {
       <h1 className={styles['product-name']}>{item.title}</h1>
       <div className={styles['info-container']}>
         <img src={`/img/${item.imageId}`} alt={item.title} className={styles['product-image']} />
-        <p className={styles['product-detalle']}>{item.description}</p>
+        <p className={styles['product-detail']}>{item.description}</p>
       </div>
       <div className={styles['btn-container']}>
         <Link to="/">
-          <button className={styles['btn-volver']}>Volver</button>
+          <button className={styles['btn-back']}>Volver</button>
         </Link>
-        <button className={styles['boton-agregar']} onClick={handleAddToCart}>Agregar al carrito</button>
+        <button className={styles['button-add']} onClick={handleAddToCart}>Agregar al carrito</button>
         <ItemCount
           initial={1}
           stock={item.stock}
