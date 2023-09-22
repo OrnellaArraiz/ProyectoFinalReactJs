@@ -2,9 +2,9 @@
 
 Donde tu estilo encuentra su momento perfecto.
 
+
 ## Tabla de contenido
 
-<<<<<<< HEAD
 1. [Descripción](#descripción)
 2. [Características principales](#características-principales)
 3. [Tecnologías utilizadas](#tecnologías-utilizadas)
@@ -20,6 +20,7 @@ Donde tu estilo encuentra su momento perfecto.
 ## Descripción
 
 Este proyecto es el resultado de mi trabajo final del curso de React Js de CoderHouse, se trata de un Ecommerce ficticio que ofrece una gama de relojes y accesorios. A través de esta aplicación, creé un catálogo interactivo, un sistema de carrito de compras intuitivo y una experiencia de compra simulada completa que incluye un formulario de contacto para finalizar la compra.
+
 ## Características principales
 
 - Catálogo de relojes con imágenes y detalles de productos.
@@ -29,6 +30,7 @@ Este proyecto es el resultado de mi trabajo final del curso de React Js de Coder
 - Generación de pedidos y gestión de productos en Firebase.
 - Gestión de estados usando React Hooks.
 - Navegación entre páginas con React Router.
+
 
 ## Tecnologías utilizadas
 
@@ -42,6 +44,7 @@ Este proyecto es el resultado de mi trabajo final del curso de React Js de Coder
 - Firebase
 - Toastify
 - Git y GitHub
+
 
 ## Requerimientos
 
@@ -95,9 +98,11 @@ npm run dev
 
 Este es un proyecto con fines educativos, por lo que no tiene funcionalidad comercial ni ofrece datos sensibles. Todos los productos son ficticios y no pueden ser utilizados con fines comerciales.
 
+
 ## Estado del Proyecto
 
 - Proyecto finalizado.
+
 
 ## Créditos
 
@@ -107,9 +112,12 @@ Proyecto creado por Ornella Arraiz.
 
 [Ver Demo](https://github.com/OrnellaArraiz/ProyectoFinalReactJs/assets/126527430/0dc6e0e8-345a-4759-b910-fc5a933fdbba)
 
+
 ## Agradecimientos
 
 Nicolas, mi profesor, por siempre buscar la manera de hacernos llegar mejor la información, por las clases extras, sus tips y sugerencias, todo fue bien recibido Nico muchos éxitos.
+
+
 =======
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
