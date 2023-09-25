@@ -18,7 +18,6 @@ const ProductCart = React.memo(({ item }) => {
       });
   };
 
-
   return (
     <div className={styles['product-cart']}>
       <img src={`/img/${item.imageId}`} alt={item.title} className={styles['product-image']} />

@@ -138,11 +138,11 @@ function Checkout() {
               required
             />
           </div>
-          <button type="submit" className={styles['submit-button']}>
-            Finalizar Compra
-          </button>
+          <button type="submit" className={styles['submit-button']}>Finalizar Compra</button>
 
-          <Link to="/"><button className={styles['button-back-form']}> Volver </button></Link>
+          <Link to="/">
+            <button className={styles['button-back-form']}>Volver</button>
+          </Link>
         </form>
       )}
     </div>
